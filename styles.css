@@ -1,0 +1,112 @@
+/* styles.css */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #2980b9, #6dd5fa);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+  }
+  
+  /* Header */
+  .header {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+  }
+  
+  /* Container for Joke */
+  .container {
+    margin-top: 120px; /* to avoid header overlap */
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+  }
+  
+  .joke-container {
+    margin-bottom: 20px;
+  }
+  
+  .joke-setup {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+  
+  .joke-punchline {
+    font-size: 1.5rem;
+    color: #27ae60;
+    font-weight: 700;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Button Styles */
+  .button {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button:hover {
+    background: linear-gradient(135deg, #c0392b, #9b2d20);
+    transform: translateY(-3px);
+  }
+  
+  .button:active {
+    transform: translateY(1px);
+  }
+  
+  /* Smooth Animation for Joke */
+  .joke-setup,
+  .joke-punchline {
+    transition: opacity 0.5s ease;
+  }
+  
+  .joke-punchline {
+    color: #27ae60;
+    font-weight: 700;
+    opacity: 0;
+  }
+  
+  
